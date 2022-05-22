@@ -1,7 +1,31 @@
 # GifsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+## **ViewChild()**
+Con el uso del decorador @ViewChild tenemos acceso al valor de una etiqueta o una referencia local del HTML
 
+## **Pipe: titlecase**
+Capitaliza el string comenzando siempre la primera letra de la palabra en mayuscula.
+
+## **Operador Not Null Assertion Operator** ( ! )
+Operador para asegurarse que el objeto no es nulo,
+Este operador es propio de typeScript.
+
+```
+ViewChild('txtbuscar') txtbuscar! : ElemenRef
+```
+
+## **HttpParams**
+Cuando enviamos parámetros por url podemos hacer uso de HttpParams y encapsularlo en un solo objeto.
+```
+const params = new HttpParams()
+                      .set( 'api_key', this.apiKey )
+                      .set( 'limit', '10' )
+                      .set( 'q', query );
+```
+
+----------
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
