@@ -1,3 +1,6 @@
+
+// Uso de https://quicktype.io/ para obtener el tipo de datos
+
 export interface SearchGifsResponse {
   data:       Gif[];
   pagination: Pagination;
